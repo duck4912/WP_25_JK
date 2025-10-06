@@ -41,104 +41,105 @@ public class MyApp extends JFrame {
         // menadżer rozkładu z 5 wierszami i czterema kolumnami
 
 
-      button_9.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "9");
-          }
+    button_9.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "9");
+        }
       });
-      panelButtons.add(button_9);
+    panelButtons.add(button_9);
 
-      button_8.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "8");
-          }
+    button_8.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "8");
+        }
       });
       panelButtons.add(button_8);
 
-      button_7.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "7");
-          }
-      });
-      panelButtons.add(button_7);
+    button_7.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "7");
+        }
+    });
+    panelButtons.add(button_7);
 
-      //dzielenie
-      button_divide.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              if (!screen.getText().equals("")) {
-                  firstNumber = Double.parseDouble(screen.getText());
-                  operator = "/";
-                  screen.setText("");
-              }
-          }
-      });
-      panelButtons.add(button_divide);
+    //dzielenie
+    button_divide.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (!screen.getText().equals("")) {
+                    firstNumber = Double.parseDouble(screen.getText());
+                    screen.setText("");
+                }
+                operator = "/";
+            }
+        });
 
-      button_6.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "6");
-          }
-      });
-      panelButtons.add(button_6);
+    panelButtons.add(button_divide);
 
-      button_5.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "5");
+    button_6.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "6");
           }
       });
-      panelButtons.add(button_5);
+    panelButtons.add(button_6);
 
-      button_4.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "4");
-          }
-      });
-      panelButtons.add(button_4);
+    button_5.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "5");
+        }
+    });
+    panelButtons.add(button_5);
 
-      //mnożenie
-      button_multiply.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              if (!screen.getText().equals("")) {
-                  firstNumber = Double.parseDouble(screen.getText());
-                  operator = "*";
-                  screen.setText("");
-              }
-          }
-      });
-      panelButtons.add(button_multiply);
+    button_4.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "4");
+        }
+    });
+    panelButtons.add(button_4);
 
-      button_3.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "3");
-          }
-      });
-      panelButtons.add(button_3);
+    //mnożenie
+    button_multiply.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            if (!screen.getText().equals("")) {
+                firstNumber = Double.parseDouble(screen.getText());
+                screen.setText("");
+            }
+            operator = "*";
+        }
+    });
+    panelButtons.add(button_multiply);
 
-      button_2.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "2");
-          }
-      });
-      panelButtons.add(button_2);
+    button_3.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "3");
+        }
+    });
+    panelButtons.add(button_3);
 
-      button_1.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "1");
-          }
-      });
-      panelButtons.add(button_1);
+    button_2.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "2");
+        }
+    });
+    panelButtons.add(button_2);
 
-      //odejmowanie
-      button_substract.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              if (!screen.getText().equals("")) {
-                  firstNumber = Double.parseDouble(screen.getText());
-                  operator = "-";
-                  screen.setText("");
-              }
-          }
-      });
-      panelButtons.add(button_substract);
+    button_1.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "1");
+        }
+    });
+    panelButtons.add(button_1);
+
+    //odejmowanie
+    button_substract.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            if (!screen.getText().equals("")) {
+                firstNumber = Double.parseDouble(screen.getText());
+                screen.setText("");
+            }
+            operator = "-";
+        }
+    });
+    panelButtons.add(button_substract);
 
       // wyczyść
       button_C.addActionListener(new ActionListener() {
@@ -150,34 +151,35 @@ public class MyApp extends JFrame {
       });
       panelButtons.add(button_C);
 
-      button_0.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              screen.setText(screen.getText() + "0");
-          }
-      });
+    button_0.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            screen.setText(screen.getText() + "0");
+        }
+    });
       panelButtons.add(button_0);
 
-      //backspace
-      button_backspace.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              String text = screen.getText();
-              if (!text.isEmpty()) {
-                  screen.setText(text.substring(0, text.length() - 1));
-              }
-          }
-      });
-      panelButtons.add(button_backspace);
+    //backspace
+    button_backspace.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            String text = screen.getText();
+            if (!text.isEmpty()) {
+                screen.setText(text.substring(0, text.length() - 1));
+            }
+        }
+    });
+    panelButtons.add(button_backspace);
 
-      //dodawanie
-      button_add.addActionListener(new ActionListener() {
-          public void actionPerformed(ActionEvent e) {
-              if (!screen.getText().equals("")) {
-                  firstNumber = Double.parseDouble(screen.getText());
-                  operator = "+";
-                  screen.setText("");
-              }
-          }
-      });
+    //dodawanie
+    button_add.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            if (!screen.getText().equals("")) {
+                firstNumber = Double.parseDouble(screen.getText());
+                screen.setText("");
+            }
+            operator = "+"; 
+        }
+    });
+
       panelButtons.add(button_add);
 
       panelButtons.add(new JLabel());
